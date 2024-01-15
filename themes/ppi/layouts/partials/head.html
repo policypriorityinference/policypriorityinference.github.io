@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://use.typekit.net/ngu4vyg.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<script src="/js/accordions.js"></script>
+<script src="/js/buttons.js"></script>
+<script src="/js/test.js"></script>
+<script src="/js/menu.js"></script>
+
+<script src="https://kit.fontawesome.com/5a9c250c96.js" crossorigin="anonymous"></script>
+
+
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}

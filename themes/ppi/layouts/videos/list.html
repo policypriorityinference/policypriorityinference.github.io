@@ -1,0 +1,194 @@
+{{ define "main" }}
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+						<h1 class="large-h1 ">{{.Title | safeHTML }}</h1>
+						<div class="pt-3 social-snippet">
+							{{.Params.snippet | safeHTML }}
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{{ if .Content }}
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+					
+						<div>
+							<p>  {{ . | safeHTML }}</p>
+						</div>					
+					
+					</div>
+				</div>	
+			</div>			
+		</div>				
+	</section>
+{{ end }}
+	
+	
+
+			{{ $taxo := "video_language" }}
+	
+			  {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
+			  
+				{{ $counter := 0 }}
+					  
+				{{ range .Pages.ByWeight }}
+				
+					{{$counter = add $counter 1}}
+
+
+	<section class="container-fluid backgrounded background-{{if eq ($counter) 2 }}primary{{else}}white{{end}}">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard mt-5">
+							<h2>{{ .Params.langtitle | safeHTML }}</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container-fluid backgrounded background-{{if eq ($counter) 2 }}primary{{else}}white{{end}}">
+		<div class="container-xl">
+			<div class="row">	
+			{{ range .Pages }}
+												
+							  
+									<article class="cpt_videos ppp-col-12 ppp-col-md-6 ppp-col-lg-4">
+										<a href="{{ .RelPermalink }}">
+											<div class="inner-article">
+
+												<div class="thumbnail-container">
+													<img alt="Thumbnail from the video" class="video-thumbnail" src="https://img.youtube.com/vi/{{ .Params.youtube_id}}/hqdefault.jpg">
+												</div>
+											
+												<div class="inner-article-text">
+																																				
+														<h3 class="if-search-page-then-mt-0  if-no-snippet-mb-sixty if-no-snippet-pb-thirty">
+													
+															{{ .LinkTitle | safeHTML }}
+														
+														</h3>
+														<p style="padding-bottom:10px">
+															<i>{{ .Params.position | safeHTML }}</i>
+														</p>
+															
+														<p>
+															{{ .Params.snippet | safeHTML }}
+														</p>
+													<div class="box-button-container">
+															
+														<button class="my-0 text-button" tabindex="-1">
+															<div class="button-inner-text">Watch now</div>
+														</button>
+																
+													</div>
+												</div>
+											</div>
+										</a>
+
+									</article>										  
+																	  
+							  {{ end }}
+
+						</div>
+					</div>
+				</div>									 
+			</div>
+		</div>
+	</section>				
+						{{ end }}
+					{{ end }}
+								
+
+
+
+
+
+
+	<section class="container-fluid background-primary">
+		<div class="container-xl p-0">
+			<div class="row m-0 gx-4 px-sm-turing px-xl-thirty">
+				<div class="turing-col-100pc px-sm-turing px-xl-thirty">
+					<div class="inner-background-primary">						
+						<div class="">
+							<h2 lang=""></h2>
+							<div class="row gx-4 m-0">
+						
+								{{ range .Site.Taxonomies.publication_type.ByWeight}}
+									<h2>{{ .Page.Title | safeHTML }}</h2>
+									{{ range .Pages }}
+
+										<article lang="############" class="cpt_publications full-width-row">
+											<div tabindex="0" class="px-0 row m-0 mb-3 gx-4 accordion-row-head py-4 accordion accordion-closed">
+												<div class="px-4 px-md-5 accordion-name turing-col-90pc">
+													{{ with .Params.citation | safeHTML }}
+														<div>
+														{{ . }}
+														</div>
+													{{ end }}
+												</div>
+												<div class="down-button turing-col-10pc py-4 align-items-end align-items-lg-center">
+													<div class="stroke-container">	
+														<div class="vertical-stroke"></div>
+														<div class="horizontal-stroke"></div>
+													</div>
+												</div>
+											</div>
+											<div class="accordion-row-text ">
+												<div class="row m-0 gx-4">
+													<div class="order-1 turing-col-100pc turing-col-md-60pc turing-col-lg-70pc px-4 px-md-5 pt-4 pt-md-5">
+														<h4>
+															{{ .Title | safeHTML }}
+														</h4>
+													</div>				
+														
+													<div class="order-3 order-md-2 turing-col-md-40pc turing-col-lg-30pc px-4 px-md-5 pt-0 pb-5 pb-md-0 pt-md-5 ">
+													
+													</div>
+													<div class="order-2 order-md-3 turing-col-100pc turing-col-lg-70pc pt-3 pb-5 px-4 px-md-5">
+														<p>
+														{{ .Content | safeHTML }}
+														</p>
+														{{ if .Params.url }}
+															<div class="box-button-container pb-turing">
+																<a href="https://{{ . }}">
+																	<button lang="en" class="my-0 text-button">
+																		<div class="button-inner-text">Read now
+																			{{ if .Params.subscription_required | safeHTML }}
+																			<span class='subscription'> (Subscription required) </span>
+																			{{ end }}
+																		</div>
+																		
+																	</button>
+																</a>
+																
+															</div>
+														{{ end }}
+													</div>				
+												</div>
+											</div>
+										</article>
+
+
+																				
+									{{ end }}
+								{{ end }}
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{{ end }}

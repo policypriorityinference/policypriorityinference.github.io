@@ -1,0 +1,11 @@
+baseURL = 'https://policypriority.org'
+languageCode = 'en-us'
+title = 'Policy Priority Inference'
+theme = 'ppi'
+
+[markup.goldmark.renderer] 
+unsafe= true 
+
+[taxonomies]
+publication_type = "publication_type"
+video_language = "video_language"

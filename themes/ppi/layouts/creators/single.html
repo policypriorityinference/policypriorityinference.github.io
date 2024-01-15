@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+
+	<section id="main" class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+							<h1 class="medium-h1">{{ .Title | safeHTML }}</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12 mb-5">
+					<div class="ppp-col-standard social-snippet">
+						<i>
+						{{ .Params.position_institution | safeHTML }}
+						</i>
+					</div>	
+				</div>
+				<div class="order-2 order-md-1 ppp-col-12 ppp-col-md-6 ppp-col-lg-7">
+					{{ .Content | safeHTML }}
+					
+					<div class="person-links-container">
+				
+						<a href="https://twitter.com/{{.Params.twitter_handle}}">
+							<button class="person-link">
+								<i class="fa-regular fa-brands fa-x-twitter"></i>
+							</button>
+						</a>
+					
+						<a href="{{.Params.personal_website}}">
+							<button class="person-link">
+								<i class="fa-solid fa-globe"></i>	
+							</button>
+						</a>
+					
+					</div>
+						
+				</div>	
+					
+				<div class="image-container order-1 order-md-2 ppp-col-12 ppp-col-md-6 ppp-col-lg-5 float-right">
+					<img class="mb-4" src="../{{ .Params.image }}" alt="{{ .Title }}">
+					<span class="pb-turing pb-xl-thirty image-caption">{{ .Params.caption | safeHTML }}</span>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+  
+  
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

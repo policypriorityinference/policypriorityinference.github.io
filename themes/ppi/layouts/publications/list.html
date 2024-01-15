@@ -1,0 +1,209 @@
+{{ define "main" }}
+
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+					
+						<h1 class="large-h1 ">{{.Title | safeHTML }}</h1>
+						{{with .Params.snippet}}
+						<div class="pt-3 social-snippet">
+							{{ . | safeHTML }}
+						</div>				
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{{with .Content}}
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+					
+						<div>
+							<p>  {{ . | safeHTML }}</p>
+						</div>					
+					
+					</div>
+				</div>	
+			</div>			
+		</div>				
+	</section>
+{{ end }}
+	
+	
+	<section class="container-fluid">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+	
+
+								{{ $taxo := "publication_type" }}
+						
+								  {{ with ($.Site.GetPage (printf "/%s" $taxo)) }}
+								  		  
+									{{ range .Pages.ByWeight }}
+								
+										
+										{{ $counter := 0 }}
+									  
+										{{ range .Pages.ByWeight }}
+										
+											{{$counter = add $counter 1}}
+										
+										{{end}}
+										<h2>{{ .Title }}{{if gt ($counter) 1 }}s{{end}}</h2>
+										<div class="accordions-container mb-5">	
+									
+											  {{ range .Pages }}
+										
+										  
+										  
+										  
+										<article lang="############" class="cpt_publications full-width-row">
+											<div tabindex="0" class="row accordion-row-head accordion accordion-closed py-4">
+												<div class="accordion-name ppp-col-11 ml-0">
+													{{ with .Params.citation }}
+														<div>
+														{{ . | safeHTML  }}
+														</div>
+													{{ end }}
+												</div>
+												<div class="down-button">
+													<div class="stroke-container">	
+														<div class="vertical-stroke"></div>
+														<div class="horizontal-stroke"></div>
+													</div>
+												</div>
+											</div>
+											<div class="accordion-row-text ">
+												<div class="row mb-0">
+													<div class="order-1 ppp-col-standard pt-5">
+														<h4>
+															{{ .Title }}
+														</h4>
+													</div>				
+														
+													<div class="order-3 order-md-2 ">
+													
+													</div>
+													<div class="order-2 order-md-3 ppp-col-standard py-4">
+														<p>
+														{{ .Content }}
+														</p>
+													
+														{{ if .Params.url }}
+												
+															<div class="box-button-container pb-turing">
+																<a href="https://{{ .Params.url }}">
+																	<button lang="en" class="my-0 text-button">
+																		<div class="button-inner-text">Read now
+																			{{ if .Params.subscription_required }}
+																			<span class='subscription'> (Subscription required) </span>
+																			{{ end }}
+																		</div>
+																		
+																	</button>
+																</a>
+																
+															</div>
+														{{ end }}
+													</div>				
+												</div>
+											</div>
+										</article>									  
+										  
+										  
+										{{ end }}	
+									</div>										
+									{{ end }}
+								  {{ end }}
+								
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+
+							<div class="row">
+						
+								{{ range .Site.Taxonomies.publication_type.ByWeight}}
+									<h2>{{ .Page.Title }}</h2>
+									{{ range .Pages }}
+
+										<article lang="############" class="cpt_publications full-width-row">
+											<div tabindex="0" class="px-0 row m-0 mb-3 gx-4 accordion-row-head py-4 accordion accordion-closed">
+												<div class="px-4 px-md-5 accordion-name turing-col-90pc">
+													{{ with .Params.citation }}
+														<div>
+														{{ . }}
+														</div>
+													{{ end }}
+												</div>
+												<div class="down-button turing-col-10pc py-4 align-items-end align-items-lg-center">
+													<div class="stroke-container">	
+														<div class="vertical-stroke"></div>
+														<div class="horizontal-stroke"></div>
+													</div>
+												</div>
+											</div>
+											<div class="accordion-row-text ">
+												<div class="row m-0 gx-4">
+													<div class="order-1 turing-col-100pc turing-col-md-60pc turing-col-lg-70pc px-4 px-md-5 pt-4 pt-md-5">
+														<h4>
+															{{ .Title }}
+														</h4>
+													</div>				
+														
+													<div class="order-3 order-md-2 turing-col-md-40pc turing-col-lg-30pc px-4 px-md-5 pt-0 pb-5 pb-md-0 pt-md-5 ">
+													
+													</div>
+													<div class="order-2 order-md-3 turing-col-100pc turing-col-lg-70pc pt-3 pb-5 px-4 px-md-5">
+														<p>
+														{{ .Content }}
+														</p>
+														{{ if .Params.url }}
+															<div class="box-button-container pb-turing">
+																<a href="https://{{ . }}">
+																	<button lang="en" class="my-0 text-button">
+																		<div class="button-inner-text">Read now
+																			{{ if .Params.subscription_required }}
+																			<span class='subscription'> (Subscription required) </span>
+																			{{ end }}
+																		</div>
+																		
+																	</button>
+																</a>
+																
+															</div>
+														{{ end }}
+													</div>				
+												</div>
+											</div>
+										</article>
+
+
+																				
+									{{ end }}
+								{{ end }}
+
+							</div>
+						</div>
+
+			</div>
+		</div>
+	</section>
+
+	
+	
+{{ end }}

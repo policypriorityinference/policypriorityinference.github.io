@@ -1,0 +1,107 @@
+{{ define "main" }}
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+						<h1 class="large-h1 ">{{.Title | safeHTML }}</h1>
+						{{with .Params.snippet}}
+						<div class="pt-3 social-snippet">
+							{{ . | safeHTML }}
+						</div>				
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{{with .Content}}
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+					
+						<div class="">
+							<p>  {{ . | safeHTML }}</p>
+						</div>					
+					
+					</div>
+				</div>	
+			</div>			
+		</div>				
+	</section>
+{{ end }}
+	
+<section class="container-fluid mt-3 backgrounded background-white">
+		<div class="container-xl p-0">
+			<div class="inner-background-white full-screen">
+		
+			
+							<div class="row">
+							
+								{{ range .Pages }}
+								
+								
+																
+																	
+									<article lang="{{.Params.language}}" class="cpt_press  ppp-col-12 ppp-col-md-6 ppp-col-xl-4">
+										<a href="https://{{.Params.url}}">
+											<div class="inner-article">
+
+
+											
+												<div class="inner-article-text">
+													
+														
+													
+													<h3>{{.Title | safeHTML }}</h3>
+													<span class="source-and-date">{{.Params.media_source | safeHTML }}, {{.Params.year | safeHTML }}</span>
+													
+													<p class="mt-3">
+													{{.Params.snippet | safeHTML }}
+													{{$alt := .Params.media_source}}
+													
+													</p>
+													<div class="box-button-container ">
+														
+													{{with .Resources.GetMatch "image.png"}}
+													<div class="thumbnail-container">
+													<div class="overlay" style="
+															height: 100%;
+															position: absolute;
+															width: 100%;
+															background: rgb(183 198 224 / 30%);
+															z-index: 1;	">
+													</div>
+													
+									
+									
+															<img src="{{.Permalink}}" alt="{{ $alt }} logo">
+													</div>
+													{{end}}
+													
+														
+														<button lang="en" class="my-0 text-button " tabindex="-1">
+															<div class="button-inner-text">Read now</div>
+														</button>
+																
+													
+													</div>
+												</div>
+											</div>
+										</a>
+
+									</article>
+
+																
+								
+									
+								{{ end }}
+
+							</div>		
+			</div>
+		</div>
+	</section>
+{{ end }}

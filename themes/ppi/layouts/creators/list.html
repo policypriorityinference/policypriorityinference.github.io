@@ -1,0 +1,92 @@
+{{ define "main" }}
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+						<h1 class="large-h1 ">{{.Title}}</h1>
+						{{with .Params.snippet}}
+						<div class="pt-3 social-snippet">
+							{{ . | safeHTML }}
+						</div>				
+						{{ end }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{{with .Content}}
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+					
+						<div>
+							<p>  {{ . | safeHTML }}</p>
+						</div>					
+					
+					</div>
+				</div>	
+			</div>			
+		</div>				
+	</section>
+{{ end }}
+	
+<section class="container-fluid py-0 background-white">
+		<div class="container-xl p-0">
+			<div class="inner-background-white full-screen">
+		
+			
+							<div class="row">
+							
+								{{ range .Pages }}
+								
+								
+																
+								<article class="cpt_tutorials  ppp-col-12 ppp-col-md-6 ppp-col-lg-4">
+									<a href="{{ .RelPermalink }}">
+										<div class="inner-article">
+
+											<div class="thumbnail-container">
+												<img src="{{.Params.image}}">
+											</div>
+										
+											<div class="inner-article-text">
+																																				
+													<h3 class="if-search-page-then-mt-0  if-no-snippet-mb-sixty if-no-snippet-pb-thirty">
+												
+														{{ .LinkTitle }}
+													
+													</h3>
+													<p style="padding-bottom:10px">
+														<i>{{ .Params.position }}</i>
+													</p>
+														
+													<p>
+														{{ .Params.snippet }}
+													</p>
+												<div class="box-button-container">
+														
+																<button class="my-0 text-button" tabindex="-1">
+																	<div class="button-inner-text">Find out more</div>
+																</button>
+															
+												</div>
+											</div>
+										</div>
+									</a>
+
+								</article>
+																
+								
+									
+								{{ end }}
+
+							</div>
+		
+			</div>
+		</div>
+	</section>
+{{ end }}

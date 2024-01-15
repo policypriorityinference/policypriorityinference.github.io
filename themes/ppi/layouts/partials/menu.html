@@ -1,0 +1,116 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+
+{{- $page := .page }}
+{{- $menuID := "main" }}
+
+
+
+
+{{- with index site.Menus $menuID }}
+
+<nav class="container-fluid">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					
+						<a href="#main" class="skip-main">Skip down to main content</a>	
+
+						<div class="logo-container" style="top:20px;height:60px;width:120px;position:absolute;left:0px">
+							<img src="/images/ati.png" alt="The Alan Turing Institute logo">
+						</div>					
+					
+
+						<div id="main_menu" class="px-turing">
+							<div id="full-width-menu">									
+							<div class="menu-main_menu-container">							
+								<ul id="menu-main_menu" class="menu">
+								      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+								</ul>
+							</div>							
+						</div>
+						
+					
+
+						<div id="mobile-menu">
+							<!-- THE MENU BUTTON -->
+							<button aria-haspopup="true" role="navigation" class="menu-button menu-closed">
+								<span class="visuallyhidden">Main menu</span>
+										<div class="menu-line menu-line-1"></div>
+										<div class="menu-line menu-line-2a"></div>
+										<div class="menu-line menu-line-2b"></div>
+										<div class="menu-line menu-line-3"></div>
+							</button>												
+						</div>
+
+						
+					</div>												
+										
+
+						
+	<nav id="mobile-menu-data">
+		<div class="container-fluid py-0 px-0">
+			<div class="row gx-4 px-turing">
+				<div class="turing-col-100pc px-sixty py-sixty">
+
+						<div class="menu-main_menu-container">
+							<p><span class="ppp-menu-title"></span></p>
+							<ul id="menu-main_menu-1" class="menu">
+							
+						
+								{{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+
+							
+							</ul>
+
+						</div>
+				</div>
+			</div>
+		</div>
+		</nav>
+
+
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" .URL }}
+    {{- if $page.IsMenuCurrent .Menu . }}
+      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+    {{- else if $page.HasMenuCurrent .Menu .}}
+      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+    {{- end }}
+    <li>
+      <a
+        {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}
+      >{{ or (T .Identifier) .Name | safeHTML }}</a>
+      {{- with .Children }}
+        <ul>
+          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+      {{- end }}
+    </li>
+  {{- end }}
+{{- end }}
+
+<div id="main"></div>

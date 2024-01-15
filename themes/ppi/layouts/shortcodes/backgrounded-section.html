@@ -1,0 +1,34 @@
+<section class="content-block container-fluid">
+<div class="container-xl">
+<div class="row">
+
+
+{{ if ne (.Get "class") "inner-background-white" }}
+
+<div class='ppp-col-12 inner-background {{ .Get "class" }}'>	
+<div class="row">
+{{ end }}
+
+
+{{if ne (.Get "type") "bespoke"}}
+<div class="ppp-col-12">
+<div class="ppp-col-standard">
+{{ end }}
+
+{{ .Inner }}
+
+{{if ne (.Get "type") "bespoke"}}
+</div>
+</div>
+{{end}}
+
+
+{{ if ne (.Get "class") "inner-background-white" }}
+</div>
+</div>
+{{ end }}
+
+
+</div>
+</div>	
+</section>

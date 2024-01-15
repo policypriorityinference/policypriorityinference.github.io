@@ -1,0 +1,9 @@
+items:
+  - title: Google Anaytics (functional)
+    description: This code gives us insight into the number of people that visit our website, where they are from and what they are clicking on. We follow the guidelines of the Dutch Government, which describe how to use Google Analytics without requiring explicit consent.
+    is_functional: false
+    script_file: ga.js
+  - title: notebooks.githubusercontent.com
+    description: This cookie tracks visits to GitHub. The tutorials on the site are embedded iframes from GitHub. In order for them to display you will need to enable the cookie.
+    is_functional: false
+    script_file: notebooks.js    

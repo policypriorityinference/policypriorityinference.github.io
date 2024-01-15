@@ -1,0 +1,46 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+
+[[menus.main]]
+name = 'About PPI'
+pageRef = '/'
+weight = 5
+
+[[menus.main]]
+name = 'App'
+pageRef = '/pages/app.md'
+weight = 10
+
+[[menus.main]]
+name = 'Tutorials'
+pageRef = '/tutorials'
+weight = 20
+
+[[menus.main]]
+name = 'Videos'
+pageRef = '/videos'
+weight = 30
+
+[[menus.main]]
+name = 'Creators'
+pageRef = '/creators'
+weight = 40
+
+[[menus.main]]
+name = 'Publications'
+pageRef = '/publications'
+weight = 50
+
+[[menus.main]]
+name = 'Press'
+pageRef = '/press'
+weight = 60
+
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+

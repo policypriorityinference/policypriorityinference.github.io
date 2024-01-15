@@ -1,0 +1,497 @@
+// TYPOGRAPHY
+
+	body{
+		font-size:1.2rem;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif!important;
+	}
+
+
+@media screen and (min-width:600px){
+
+
+	body{
+		font-size:1rem;
+	}
+
+}
+
+	h1, h2, h3, h4{
+		font-family: "Raleway", sans-serif;
+		font-weight: 600;
+		font-style: normal;
+		
+	}
+
+	h1{
+		font-size:4em;
+	}
+
+	h2 {
+		font-size:2rem!important;
+		font-weight:bold!important;
+		margin-bottom:1.5rem!important;
+	}
+	h3{
+		font-size:1.7em;
+		font-weight:300;
+		line-height:2.3rem;
+	}
+
+	h2, h3{
+		position:relative;
+	}
+
+
+
+
+// LINKS
+
+
+// BACKGROUNDS
+
+	.inner-background-primary, section.background-primary{
+		background-color:#EAEFF4;
+	}
+	
+	.inner-background-secondary, section.background-secondary{
+		background-color:#c3cfe2;
+
+		p, ol li, ul li{
+			color:black;
+		}
+		a{
+			color:#014656;
+		}
+
+	}
+	
+	.inner-background-dimgray, section.background-dimgray{
+		background-color:#262626;
+	}
+	.inner-background-black, section.background-black{
+		background-color:#000000;	
+	}
+
+	.inner-background-black, section.background-black, .inner-background-dimgray, section.background-dimgray{
+	
+		*{
+			color:white;
+		}
+		a{
+			
+			color: #8bcaff !important;
+			font-weight: 500;
+			background: linear-gradient(0deg, #8bcaff, #8bcaff) no-repeat right bottom/0 var(--bg-h);
+			transition: background-size 350ms;
+			padding-bottom: 2px;
+			--bg-h: 2px;
+		}
+		
+		a:where(:hover,:focus-visible){
+			background-size: 100% var(--bg-h);
+			background-position-x: left;
+		}		
+
+
+	}
+
+
+	.outer-border{
+		border:1px solid black;
+		margin-bottom:var(--vertical-gutter-padding);
+	}
+
+@media screen and (max-width:600px){
+	.outer-border{
+		border:0px;
+	}
+	.outer-border > .row {
+		padding:0px;
+	}		
+	.outer-border > .row > .ppp-col-12{
+		margin:0px;
+	}
+}
+	
+	
+	
+// BUTTONS
+
+
+// BUTTONS
+
+	button:disabled{
+		cursor:pointer;
+	}
+
+		main{
+			button{
+				border: 0px;
+				padding: 8px;
+				border-radius: 10px;
+				font-size: 1.1em;
+				padding-left: 20px;
+				padding-right: 20px;
+				cursor: pointer;
+				position:relative;
+				overflow:hidden;
+				padding-right: 13px;
+				width: auto;
+				border-radius: 5px;
+				height: fit-content;
+				position: relative;
+				align-items: center;
+				padding-left: 10px;
+				margin-top: 20px;
+				background-color: #FFF;
+				border-color: transparent;
+				transition: background-color 0.5s, color 0.5s;
+				margin-bottom: 10px !important;
+				color: #1d1616 !important;
+				border: 1px solid #1d1616;
+				padding-left: 13px;
+				font-family: Raleway;				
+			}
+			
+			button:hover{
+				background-color: #ececec;
+			
+			}
+			button:focus{
+				background-color:#ececec;	
+			}
+			
+			button p{
+				margin-bottom:0px!important;
+			}
+		}
+		
+		.button-inner-text{
+			z-index:6!important;
+		}
+		
+		.ripple {
+			background-color: #1C66D3;
+			width: 0.5rem;
+			height: 0.5rem;
+			position: absolute;
+			z-index:5;
+			border-radius: 50%;
+			animation: ripple 300ms ease-out forwards, fade 1500ms ease-out forwards;
+			transform: translateX(0%) translateY(0%);
+			
+		}
+
+		@keyframes ripple {
+			0%   { transform: scale(0)}
+			80%  { transform: scale(5); opacity: 1;}
+			100% { transform: scale(5); }
+		}
+
+		@keyframes fade {
+			0%   { opacity: 1; }
+			100% { opacity: 0; }
+		}
+	
+
+	.text-button-container{
+		position: relative;
+		bottom: 0px;
+		width: fit-content;
+		float: left;
+		margin-right: 10px;
+	}
+
+
+.text-button-container + p, .text-button-container + ul, .text-button-container + ol{
+	width:100%;
+	display:inline-block;
+} 
+
+.text-button-container button.text-button {
+	padding: 13px;
+    width: auto;
+    border-radius: 5px;
+    height: fit-content;
+    position: relative;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.4);
+    border-color: transparent;
+    transition: background-color 0.5s, color 0.5s;
+    margin-bottom: 10px !important;
+    color: #1d1616 !important;
+    border: 1px solid #1d1616;
+    padding-left: 13px;
+    font-family: Raleway;
+}
+
+.text-button-container button:hover {
+    background-color: #ececec
+}
+
+.text-button-container a{
+
+	background:transparent!important;
+}
+
+.ripple {
+    background-color: grey;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    z-index: 3;
+    border-radius: 50%;
+    animation: ripple 300ms ease-out forwards, fade 1500ms ease-out forwards;
+    transform: translateX(0%) translateY(0%)
+}
+
+// GIST
+
+	.gist{
+		margin-top:var(--vertical-gutter-padding)!important;
+
+		iframe{
+			height: calc(100vh - 2*(var(--vertical-gutter-padding)))!important;
+		}
+
+	}	
+
+// IMAGES
+
+
+	img {
+		filter: grayscale(100%);
+		transition: filter 500ms;
+	}
+
+// ARTICLE
+
+.thumbnail-container {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail-container img {
+    position: absolute;
+    width: 100%;
+}
+
+.cpt_videos .thumbnail-container img {
+    top: -16.8%;
+}
+
+		article a{
+			display:block;
+			background:transparent;
+		}
+
+		article:hover img {
+			filter: grayscale(0%);
+		}
+						
+						
+		article button{
+			background-color:transparent;
+		
+		}
+		article.cpt_press .thumbnail-container {
+			width: 150px;
+			height: 90px;
+			position: absolute;
+			overflow: hidden;
+			display: flex;
+			align-items: end;
+			background-color: white;
+			border: 3px solid #eaeff4;
+			padding-bottom: 0px;
+			bottom: 0px;
+			left: 0px;
+		}
+		
+		article.cpt_press .thumbnail-container img {
+			width: auto !important;
+			max-width: 140px !important;
+			max-height: 80%;
+			object-fit: contain;
+			margin-bottom: 0px;
+		}
+		
+		.source-and-date{
+			font-weight:600;
+			font-size: 1.1rem;
+			margin-bottom:20px;
+		}
+		
+		.cpt_publications .accordion-row-head{
+			position:relative;
+			
+			.down-button{
+				padding: 0px;
+				position: absolute;
+				right: 20px;
+				bottom: 20px;
+
+			}
+		}
+		
+		.cpt_publications .box-button-container button{
+			float:left;
+		}
+		
+		.cpt_publications .box-button-container {
+			bottom: -10px;
+		}
+		
+		.down-button{
+			padding: 0px;
+			position: absolute;
+			right: 30px;
+			background: #9bacc8;
+			width: 30px;
+			height: 30px;
+			border-radius: 30px;
+			
+			
+		}
+		
+		.down-button .vertical-stroke, .down-button .horizontal-stroke{
+			background-color: #FFFFFF;
+		}
+		
+		.down-button .stroke-container {
+			display: block;
+			height: 16px;
+			width: 16px;
+			position: relative;
+			transition: all 0.5s ease;
+		}
+	
+// MENU (@media rules for Hugo)
+
+	.logo-container{
+		top: 20px;
+		height: 60px;
+		width: 120px;
+		position: absolute;
+		left: 0px;
+		z-index: 20;	
+	
+	}
+
+	#mobile-menu-data{
+		display:none;
+		background-color:#c0d8f3;
+		z-index: 10;
+		position: absolute;
+		top: 0px;
+		left: -28px;
+	}
+	
+	.mobile-menu button.menu-button{
+		z-index: 20;
+		position: absolute;
+		top: 15px;
+		right: 0px;
+	}
+
+	#menu-main_menu{
+		display:none!important;
+	}
+
+	#mobile-menu{
+		display:block!important;
+		z-index:20;
+		position:absolute;
+		right:0px;
+		top:16px;
+	}
+
+
+	.ppp-menu-title{
+		font-family: Raleway;
+		width: 100%;
+		display: flex;
+		font-weight: 900;
+		text-align: center;
+		justify-content: center;
+		margin-top: 10vh;	
+	}
+
+	#mobile-menu-data ul li {
+		font-size: 1rem;
+		text-align: center;
+		color: #000;
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		transition: color 0.5s;
+	}
+
+@media screen and (min-width:768px){
+	#menu-main_menu{
+		display:flex!important;
+	}
+	
+	#mobile-menu{
+		display:none!important;
+	}
+	
+	#mobile-menu-data{
+		display:none!important;
+	}
+	
+}
+
+//CONSENT PLUGIN
+
+#consent-overlay * {
+    color: black;
+}
+
+#consent-notice{
+	width:100%!important;
+}
+
+.btn.deny-consent, .btn.approve-consent{
+	background-color:#eceff4;
+}
+
+.btn.manage-consent {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: normal;
+    color: #eceff4;
+}
+
+.notebooks-default{
+	min-height: 40vh;
+    margin-top: var(--vertical-gutter-padding);
+}
+
+
+.btn.save-consent{
+	color:#FFFFFF;
+	background-color:rgba(0,0,0,0.1);
+}
+
+.btn.save-consent{
+	background: rgba(0,0,0,0.1)!important;
+}
+
+.btn.save-consent:hover, .btn.deny-consent:hover, .btn.approve-consent:hover, .btn.manage-consent:hover{
+	background-color:bisque!important;
+	color:#000;
+}
+
+#consent-overlay h3{
+	font-size: 1.2em;
+    font-weight: 600;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+}
+
+
+	

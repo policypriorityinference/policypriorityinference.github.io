@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+					<div class="ppp-col-standard">
+					
+			
+								<h1>{{ .Title | safeHTML }}</h1>
+								
+								{{ with .Params.snippet }}
+									<div class="pt-3 social-snippet">
+										{{ . | safeHTML }}
+									</div>	
+								{{ end }}
+								
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>	
+
+	<section class="container-fluid backgrounded background-white">
+		<div class="container-xl">
+			<div class="row">
+				<div class="ppp-col-12">
+						
+	
+						<div class="youtube iframe-container mt-5">
+							<iframe style="border:0" class="embedded-video" allowfullscreen="allowfullscreen" src="https://www.youtube-nocookie.com/embed/{{ .Params.youtube_id }}?showinfo=0"></iframe>
+						</div>	
+		
+
+						
+				
+				</div>
+			</div>
+		</div>
+	</section>
+  
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}
