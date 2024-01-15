@@ -15,40 +15,6 @@
 
 <script src="https://kit.fontawesome.com/5a9c250c96.js" crossorigin="anonymous"></script>
 
-<script>
-
-    function readTheCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-        }
-        return null;
-    }
-	
-	var cookie = readTheCookie('consent-settings');
-
-
-	if(!cookie){
-		return;
-	}else if(cookie[0] < 1){
-		return;
-	}else{
-		document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7SGV016K3"></script>');
-		document.write('<script>');
-		document.write('  window.dataLayer = window.dataLayer || [];');
-		document.write('  function gtag(){dataLayer.push(arguments);}');
-		document.write('  gtag(\'js\', new Date());');
-		document.write('  gtag(\'config\', \'G-Q7SGV016K3\');');
-		document.write('</script>');	
-	}
-
-
-
-</script>
-
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
