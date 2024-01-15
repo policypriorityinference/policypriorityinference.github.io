@@ -2,7 +2,7 @@
 title = 'Home'
 date = 2023-01-01T08:00:00-07:00
 draft = false
-snippet = "A research programme on impact evaluation for a multi-dimensional and complex world."
+snippet = "A research programme on impact evaluation for a multi-dimensional and complex world"
 
 
 +++
