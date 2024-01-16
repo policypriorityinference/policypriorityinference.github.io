@@ -6,4 +6,5 @@ media_source = "El Mundo"
 language = "es"
 year = "2020"
 date = "2023-08-28"
+sitemap_exclude = true
 +++

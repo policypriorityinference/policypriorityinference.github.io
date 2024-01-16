@@ -6,7 +6,7 @@ year = ['2019']
 subscription_required = false
 publication_type = "Dissemination"
 language = ['spanish']
-
+sitemap_exclude = true
 
 date = 2023-01-27
 draft = false

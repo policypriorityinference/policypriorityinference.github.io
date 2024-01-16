@@ -6,4 +6,5 @@ media_source = "The Economist"
 language = "en"
 year = "2020"
 date = "2023-08-29"
+sitemap_exclude = true
 +++

@@ -3,6 +3,8 @@ title = 'Tutorials'
 date = 2023-01-01T08:30:00-07:00
 snippet = "These tutorials were developed for the PPI model in Python."
 draft = false
+[sitemap]
+  priority = 1
 +++
 
 <span style="font-weight: 400; font-size: 1.3rem; line-height: 1.5rem;">The tutorials will take you from pre-processing raw data on development indicators and government spending to performing more sophisticated counterfactual analysis such as detecting bottlenecks.</span>

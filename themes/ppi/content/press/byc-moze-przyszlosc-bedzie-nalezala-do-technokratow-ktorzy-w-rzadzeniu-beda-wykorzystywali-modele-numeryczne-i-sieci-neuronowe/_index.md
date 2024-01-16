@@ -6,5 +6,6 @@ media_source = "Sztuczna Inteligencja"
 language = "pl"
 year = "2020"
 date = "2023-08-22"
+sitemap_exclude = true
 +++
 

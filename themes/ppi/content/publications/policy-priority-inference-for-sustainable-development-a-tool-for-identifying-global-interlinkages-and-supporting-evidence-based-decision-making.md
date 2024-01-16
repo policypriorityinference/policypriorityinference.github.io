@@ -6,7 +6,7 @@ year = ['2021']
 subscription_required = true
 publication_type = "policy_report"
 language = ['English']
-
+sitemap_exclude = true
 
 date = 2023-01-27
 draft = false

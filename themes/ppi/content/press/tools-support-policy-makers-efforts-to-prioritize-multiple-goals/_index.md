@@ -6,4 +6,5 @@ media_source = "SDG Knowledge Hub"
 language = "en"
 year = "2020"
 date = "2023-08-25"
+sitemap_exclude = true
 +++

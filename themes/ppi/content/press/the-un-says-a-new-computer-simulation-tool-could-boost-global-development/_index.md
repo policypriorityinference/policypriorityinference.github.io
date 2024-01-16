@@ -6,4 +6,5 @@ media_source = "MIT Technology Review"
 language = "en"
 year = "2020"
 date = "2023-08-26"
+sitemap_exclude = true
 +++

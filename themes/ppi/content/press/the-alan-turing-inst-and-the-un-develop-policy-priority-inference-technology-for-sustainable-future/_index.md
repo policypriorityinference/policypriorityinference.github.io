@@ -6,4 +6,5 @@ media_source = "AITHORITY"
 language = "en"
 year = "2020"
 date = "2023-08-24"
+sitemap_exclude = true
 +++

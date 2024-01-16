@@ -6,4 +6,5 @@ media_source = "La Silla Vacía"
 language = "es"
 year = "2021"
 date = "2023-08-30"
+sitemap_exclude = true
 +++

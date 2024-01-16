@@ -6,4 +6,5 @@ media_source = "WIRED"
 language = "en"
 year = "2020"
 date = "2023-08-27"
+sitemap_exclude = true
 +++

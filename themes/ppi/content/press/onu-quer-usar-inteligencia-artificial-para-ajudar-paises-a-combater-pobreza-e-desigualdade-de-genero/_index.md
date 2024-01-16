@@ -6,4 +6,5 @@ media_source = "Público"
 language = "pt"
 year = "2020"
 date = "2023-08-23"
+sitemap_exclude = true
 +++

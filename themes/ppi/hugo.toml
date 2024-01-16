@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://policypriority.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Policy Priority Inference'
 
 
 [[menus.main]]

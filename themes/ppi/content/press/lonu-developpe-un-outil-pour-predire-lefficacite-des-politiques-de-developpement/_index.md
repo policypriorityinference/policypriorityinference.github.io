@@ -6,4 +6,5 @@ media_source = "Presse Citron"
 language = "fr"
 year = "2020"
 date = "2023-08-21"
+sitemap_exclude = true
 +++
