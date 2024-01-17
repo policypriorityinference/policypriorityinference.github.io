@@ -63,7 +63,7 @@ The new PPI app has been developed to run a simplified version of the PPI model.
 
 
 
-{{% button url="/pages/app/" %}}
+{{% button url="/app/" %}}
 Find out more
 {{% /button %}}
 
