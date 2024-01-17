@@ -30,7 +30,11 @@ Open the app
 
 </div>
 <div class="ppp-col-12 ppp-col-lg-5">
-<img alt="A screenshot of the app" src="PPI-screenshot.png">
+
+{{% youtube id="shMhykSu72M" %}}
+
+
+
 </div>
 
 {{% /backgrounded-section %}} 

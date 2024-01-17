@@ -1,0 +1,17 @@
+<div class='ppp-col-12 ppp-col-md-6'>
+
+{{ if ne (.Get "class") "inner-background-white" }}
+
+<div class='h-100 inner-background {{ .Get "class" }}'>
+<div class="row pb-5">
+<div class='ppp-col-12 mb-4'>
+
+{{ .Inner }}
+
+</div>
+</div>
+</div>
+{{ end }}
+
+
+</div>

@@ -14,8 +14,8 @@ pageRef = '/pages/app.md'
 weight = 10
 
 [[menus.main]]
-name = 'Tutorials'
-pageRef = '/tutorials'
+name = 'Python code'
+pageRef = '/python-tutorials'
 weight = 20
 
 [[menus.main]]
