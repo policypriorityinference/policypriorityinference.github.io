@@ -10,7 +10,7 @@ weight = 5
 
 [[menus.main]]
 name = 'App'
-pageRef = '/pages/app.md'
+pageRef = '/app.md'
 weight = 10
 
 [[menus.main]]

@@ -7,7 +7,7 @@ draft = false
   priority = 1
 +++
 
-<span style="font-weight: 400; font-size: 1.3rem; line-height: 1.5rem;">This page provides access to the Python source code as well as to a package that can be installed via PyPI. The tutorials below explain how to use the Python version of the PPI model, as an alternative to the <a href="/pages/app/">app</a>.</span>
+<span style="font-weight: 400; font-size: 1.3rem; line-height: 1.5rem;">This page provides access to the Python source code as well as to a package that can be installed via PyPI. The tutorials below explain how to use the Python version of the PPI model, as an alternative to the <a href="/app/">app</a>.</span>
 
 {{% button url="https://github.com/oguerrer/ppi" %}}
 GitHub
