@@ -33,7 +33,7 @@
 	}
 	h3{
 		font-size:1.7em;
-		font-weight:300;
+		font-weight:600;
 		line-height:2.3rem;
 	}
 
@@ -430,7 +430,7 @@
 		transition: color 0.5s;
 	}
 
-@media screen and (min-width:768px){
+@media screen and (min-width:52rem){
 	#menu-main_menu{
 		display:flex!important;
 	}
