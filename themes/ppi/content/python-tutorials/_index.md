@@ -2,6 +2,7 @@
 title = 'PPI Python Tutorials'
 date = 2023-01-01T08:30:00-07:00
 snippet = "As an alternative to our app, the PPI model is also available in Python."
+aliases = ["/tutorials/"]
 draft = false
 [sitemap]
   priority = 1
