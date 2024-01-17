@@ -11,7 +11,7 @@ draft = false
 
 # The App
 <div class="pt-3 social-snippet">
-Learn how to launch and use the PPI app.
+Learn how to launch and use the PPI app
 </div>
 
 {{% /backgrounded-section %}} 
