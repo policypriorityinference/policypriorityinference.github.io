@@ -6,6 +6,7 @@ year = ['2023']
 subscription_required = false
 publication_type = "Book"
 language = ['English']
+lang = "en"
 sitemap_exclude = true
 date = 2023-01-31
 draft = false

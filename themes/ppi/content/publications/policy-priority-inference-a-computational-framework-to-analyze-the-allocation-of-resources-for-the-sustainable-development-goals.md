@@ -6,6 +6,7 @@ year = ['2020']
 subscription_required = false
 publication_type = "academic_article"
 language = ['English']
+lang = "en"
 sitemap_exclude = true
 
 date = 2023-01-24

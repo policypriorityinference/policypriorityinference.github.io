@@ -72,16 +72,13 @@
 											
 												<div class="inner-article-text">
 																																				
-														<h3 class="if-search-page-then-mt-0  if-no-snippet-mb-sixty if-no-snippet-pb-thirty">
+														<h3 lang="{{ .Params.video_language }}" class="if-search-page-then-mt-0  if-no-snippet-mb-sixty if-no-snippet-pb-thirty">
 													
 															{{ .LinkTitle | safeHTML }}
 														
 														</h3>
-														<p style="padding-bottom:10px">
-															<i>{{ .Params.position | safeHTML }}</i>
-														</p>
-															
-														<p>
+																											
+														<p lang="en">
 															{{ .Params.snippet | safeHTML }}
 														</p>
 													<div class="box-button-container">

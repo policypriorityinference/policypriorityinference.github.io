@@ -61,11 +61,11 @@
 										<div class="accordions-container mb-5">	
 									
 											  {{ range .Pages }}
-										
+											  
+					
 										  
 										  
-										  
-										<article lang="############" class="cpt_publications full-width-row">
+										<article  role="region" lang="{{ .Params.lang }}" class="cpt_publications full-width-row">
 											<div tabindex="0" class="row accordion-row-head accordion accordion-closed py-4">
 												<div class="accordion-name ppp-col-11 ml-0">
 													{{ with .Params.citation }}

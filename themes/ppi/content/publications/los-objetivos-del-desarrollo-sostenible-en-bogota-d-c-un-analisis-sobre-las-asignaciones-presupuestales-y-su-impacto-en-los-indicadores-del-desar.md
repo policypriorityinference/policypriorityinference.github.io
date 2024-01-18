@@ -6,6 +6,7 @@ year = ['2022']
 subscription_required = false
 publication_type = "policy_report"
 language = ['English']
+lang = "es"
 sitemap_exclude = true
 
 date = 2023-01-30

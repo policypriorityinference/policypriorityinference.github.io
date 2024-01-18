@@ -1,0 +1,7 @@
+{{ $postType := "python-tutorials" }}
+{{ $filteredPages := where .Site.RegularPages "Type" $postType }}
+<ul class="mt-3">
+{{ range $filteredPages }}
+ <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
