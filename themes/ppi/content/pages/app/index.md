@@ -70,9 +70,11 @@ Read each step carefully to take full advantage of the app. Should you have any 
 
 PPI needs development indicators as one of its inputs. Ideally, you should collect time series of indicators across different policy dimensions (e.g., education, governance, poverty, health, pollution). These time series should cover the same sample period and should not have missing observations. This section explains how to use these data to fill in the indicators template provided below. 
 
-{{% button url="/ppiapp/static/media/template_indicators.0555bad5f0a90d084693.xlsx" %}}
+{{% button url="/ppiapp/static/media/template_indicators.d56e9167afe4fdedf8a6.xlsx" %}}
 Download template
 {{% /button %}}
+
+
 
 Before filling in the indicators template, you need to perform two preprocessing steps that you need to perform to each of your time series. First, all the values need to be re-scaled to be between 0 and 1. This will help the app to calibrate the model faster. This practice is common in development quantitative studies and usually follows the formula:
 
@@ -106,7 +108,7 @@ There are two ways in which you can provide information about government expendi
 
 The second option is to provide a file with the budget disaggregated into expenditure programmes using the template provided below. 
 
-{{% button url="/ppiapp/static/media/template_budget.2d66549ef65205a929a2.xlsx" %}}
+{{% button url="/ppiapp/static/media/template_budget.1f59ec86cc1634bb3cbb.xlsx" %}}
 Download template
 {{% /button %}} 
 
@@ -131,7 +133,7 @@ One of the most important discussions in the sustainable development community i
 
 The template provided in this step of the workflow is organised in three sheets. The first sheet (labelled template_network) is where you must put the information about the interdependencies. The second sheet (labelled metadata) explains each column in the template. The third sheet (labelled example_network) provides an example network corresponding to the example synthetic data from the other two templates. 
 
-{{% button url="/ppiapp/static/media/template_network.9dfc7962c63ff28e1953.xlsx" %}}
+{{% button url="/ppiapp/static/media/template_network.868c9045312dd7c41878.xlsx" %}}
 Download template
 {{% /button %}} 
 
