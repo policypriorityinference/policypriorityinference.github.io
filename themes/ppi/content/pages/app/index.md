@@ -70,7 +70,7 @@ Read each step carefully to take full advantage of the app. Should you have any 
 
 PPI needs development indicators as one of its inputs. Ideally, you should collect time series of indicators across different policy dimensions (e.g., education, governance, poverty, health, pollution). These time series should cover the same sample period and should not have missing observations. This section explains how to use these data to fill in the indicators template provided below. 
 
-{{% button url="/ppiapp/static/media/template_indicators.0555bad5f0a90d084693.xlsx %}}
+{{% button url="/ppiapp/static/media/template_indicators.0555bad5f0a90d084693.xlsx" %}}
 Download template
 {{% /button %}}
 
@@ -135,7 +135,7 @@ The template provided in this step of the workflow is organised in three sheets.
 Download template
 {{% /button %}} 
 
-To fill in the template_network sheet, you must use all the labels reported in the indicators template (regardless of if they are instrumental or not). You should type those labels in every row of the first column and in every column of the first row, as shown in the example_network sheet. If you leave any indicator out, the app will not validate your data. Each entry in this matrix should be a numeric value indicating the strength of the interdependency.  These values can be positive (synergies) or negative (trade-offs). The direction of a link goes from row (the sender) to column (the receiver). 
+To fill in the template_network sheet, you must use all the labels reported in the indicators template (regardless of if they are instrumental or not). You should type those labels in every row of the first column and in every column of the first row, as shown in the example_network sheet. If you leave any indicator out, the app will not validate your data. Each entry in this matrix should be a numeric value indicating the strength of the interdependency. These values can be positive (synergies) or negative (trade-offs). The direction of a link goes from row (the sender) to column (the receiver). 
 
 Where do you get this network from? This is a very important question that is actively discussed in the sustainable development community. The answer depends on the quality of your data and your preferences towards using a particular method for constructing networks. For example, if you have long enough time series, you could use statistical and machine learning methods to estimate the interdependencies between all the indicators. Often, data with such properties are not available, so researchers rely on expert knowledge and organise workshops to elicit responses from sector-specialists who fill in an interdependency matrix. The creators of PPI have published a comprehensive review on many of these methods. Therefore, you should familiarise yourself with the various potential ways in which you could construct these networks. 
 
