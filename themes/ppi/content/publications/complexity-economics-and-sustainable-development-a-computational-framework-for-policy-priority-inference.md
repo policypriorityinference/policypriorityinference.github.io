@@ -1,6 +1,6 @@
 +++
 title = 'Complexity Economics and Sustainable Development: A Computational Framework for Policy Priority Inference'
-url = "www.brownsbfs.co.uk/Product/Guerrero-Omar-A-The-Alan-Turing-Institute-London/Complexity-economics-and-sustainable-development---a-comp/9781316516980"
+url = "www.cambridge.org/core/books/complexity-economics-and-sustainable-development/BD6CCB51DF29A5FE3638B3B99C7D0CB1"
 citation = "Guerrero, O., &amp; Castañeda, G. (2024). Complexity Economics and Sustainable Development: A Computational Framework for Policy Priority Inference (Forthcoming). Cambridge University Press."
 year = ['2024']
 subscription_required = false
