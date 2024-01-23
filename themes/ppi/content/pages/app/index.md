@@ -78,7 +78,7 @@ Download template
 
 Before filling in the indicators template, you need to perform two preprocessing steps that you need to perform to each of your time series. First, all the values need to be re-scaled to be between 0 and 1. This will help the app to calibrate the model faster. This practice is common in development quantitative studies and usually follows the formula:
 
-<img style="max-width:400px;margin-bottom:1rem" alt="rescaled_value = (max_value – observed_value) / (max_value - min_value)" src="formula1.png">
+<img style="max-width:400px;margin-bottom:1rem" alt="rescaled_value = (observed_value - min_value) / (max_value - min_value)" src="formula1.png">
 
 
 Here, max_value and min_value represent the largest and smallest observations that could be considered as potential values and, therefore, they correspond to 1 and 0 in the re-scaled series, respectively. There are different criteria to choose max_value and min_value, for example, using the theoretical limits of the indicators, using values from countries that represent best and worst cases, or taking the extreme observations in the dataset.  
