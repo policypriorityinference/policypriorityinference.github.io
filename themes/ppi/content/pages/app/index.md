@@ -95,7 +95,7 @@ The column instrumental indicates, with value 1, if there exists a government pr
 
 Finally, columns monitoring and rule_of_law correspond to governance parameters quantifying how good is the monitoring of expenditure and how serious is the rule of law when it comes to punitive measures to correct inefficient practices in the public administration. Both values should be between 0 and 1, with 0 meaning no monitoring and prevalent impunity, while 1 conveys the opposite. While the app allows to specify these values for each indicator, it is often difficult to come across such disaggregated data. Hence, a common practice is to use data from governance indicators such as the ones produced by the World Bank and assume that the same governance structure applies across all policy dimensions. 
 
-{{% youtube id="czhB4JaKMy0" %}}
+{{% youtube id="rIoxoCjK7b0" %}}
 
  
 {{% /accordion %}}
