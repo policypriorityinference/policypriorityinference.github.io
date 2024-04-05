@@ -6,7 +6,7 @@ image = "omar-a-guerrero/Omar-1.png"
 twitter_handle = "guerrero_oa"
 personal_website = "http://oguerr.com"
 position_institution = "Head of Computational Social Science Research, Alan Turing Institute"
-date = 2023-01-15T09:00:00-07:00
+date = 2023-01-14T09:00:00-07:00
 draft = false
 [sitemap]
   priority = 1
