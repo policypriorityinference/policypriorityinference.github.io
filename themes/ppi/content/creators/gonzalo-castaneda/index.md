@@ -7,7 +7,7 @@ twitter_handle = "Gon_CastanedaR"
 weight = 20
 personal_website = "https://www.social-complexity.com/about-the-boon"
 position_institution = "Professor in Economics, CIDE"
-date = 2023-03-10T11:00:00-07:00
+date = 2023-03-09T11:00:00-07:00
 draft = false
 [sitemap]
   priority = 1
