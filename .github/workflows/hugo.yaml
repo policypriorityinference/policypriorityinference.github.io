@@ -60,9 +60,8 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Remove invalid files  # ✅ NEW: Remove symlinks before upload
-        run: |
-          find ./public -type l -exec rm {} \;
+      - name: Check artifact size  # ✅ NEW: Check size before uploading
+        run: du -sh ./public
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
