@@ -20,6 +20,6 @@ PyPI
 
 These tutorials will take you from pre-processing raw data on development indicators and government spending to performing more sophisticated counterfactual analysis such as detecting bottlenecks.
 <br><br>
-You can view the tutorials via this page, and access the source code through <a href="https://github.com/oguerrer/ppi/tutorials">GitHub</a>. In the official repository, you will find that much of the content makes reference to the forthcoming book: <em>Complexity Economics and Sustainable Development</em>, which will come out later in 2023. For the time being, you can use the <a href="http://dx.doi.org/10.2139/ssrn.4101378">latest PPI paper</a> as the main scientific reference.
+You can view the tutorials via this page, and access the source code through <a href="https://github.com/oguerrer/ppi/tutorials">GitHub</a>. In the official repository, you will find that much of the content makes reference to the book: <a href="https://www.cambridge.org/core/books/complexity-economics-and-sustainable-development/BD6CCB51DF29A5FE3638B3B99C7D0CB1">Complexity Economics and Sustainable Development</a>.
 
 &nbsp;
