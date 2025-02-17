@@ -1,5 +1,5 @@
 +++
-title = 'Data preparation – interdependency networks'
+title = 'Data preparation – development indicators'
 snippet = 'This tutorial explains how you can prepare a dataset of indicators for use within the model'
 tutorial_number = '1A'
 weight = "1"
