@@ -1,6 +1,6 @@
 +++
 title = 'Perceived Adequacy of Policy Instruments Reveals Weak Targets in the Sustainable Development Goals'
-url = "https://doi.org/10.1002/sd.3044"
+url = "doi.org/10.1002/sd.3044"
 citation = "Guerrero, O., Guariso, D., &amp; Castañeda, G. (2024). Perceived Adequacy of Policy Instruments Reveals Weak Targets in the Sustainable Development Goals. Sustainable Development, Volume 32 Issue 6, 6836–6863."
 year = ['2024']
 subscription_required = false
