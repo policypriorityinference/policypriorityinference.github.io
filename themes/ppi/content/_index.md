@@ -14,7 +14,7 @@ snippet = "A research programme on impact evaluation for a multi-dimensional and
 # Policy Priority Inference
 
 <div class="pt-3 social-snippet">
-A research programme on policy impact evaluation for a multi-dimensional and complex world.</div>
+A research programme about policy impact evaluation for a multi-dimensional and complex world.</div>
 
 {{% /backgrounded-section %}} 
 
