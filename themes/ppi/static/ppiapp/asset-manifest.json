@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/ppiapp/static/css/main.edfe4944.css",
-    "main.js": "/ppiapp/static/js/main.4764aa52.js",
-    "static/js/820.24fc4af7.chunk.js": "/ppiapp/static/js/820.24fc4af7.chunk.js",
-    "static/js/502.6c105129.chunk.js": "/ppiapp/static/js/502.6c105129.chunk.js",
-    "static/js/1.ae798382.chunk.js": "/ppiapp/static/js/1.ae798382.chunk.js",
+    "main.js": "/ppiapp/static/js/main.cc71ad86.js",
+    "static/js/820.5ad22472.chunk.js": "/ppiapp/static/js/820.5ad22472.chunk.js",
+    "static/js/502.aab22b8c.chunk.js": "/ppiapp/static/js/502.aab22b8c.chunk.js",
+    "static/js/1.50ec1632.chunk.js": "/ppiapp/static/js/1.50ec1632.chunk.js",
     "static/js/833.addf8fa9.chunk.js": "/ppiapp/static/js/833.addf8fa9.chunk.js",
-    "static/js/636.a5865aa3.chunk.js": "/ppiapp/static/js/636.a5865aa3.chunk.js",
+    "static/js/636.16652abe.chunk.js": "/ppiapp/static/js/636.16652abe.chunk.js",
     "static/css/673.bdb6eedb.chunk.css": "/ppiapp/static/css/673.bdb6eedb.chunk.css",
     "static/js/673.33088659.chunk.js": "/ppiapp/static/js/673.33088659.chunk.js",
     "static/css/84.878bb820.chunk.css": "/ppiapp/static/css/84.878bb820.chunk.css",
@@ -33,17 +33,17 @@
     "static/media/template_network.xlsx": "/ppiapp/static/media/template_network.868c9045312dd7c41878.xlsx",
     "static/media/template_indicators.xlsx": "/ppiapp/static/media/template_indicators.d56e9167afe4fdedf8a6.xlsx",
     "static/media/template_budget.xlsx": "/ppiapp/static/media/template_budget.1f59ec86cc1634bb3cbb.xlsx",
-    "static/media/logoSVG.svg": "/ppiapp/static/media/logoSVG.f49105810a8227387d0a0f6ab03c4c54.svg",
+    "static/media/logoSVG.svg": "/ppiapp/static/media/logoSVG.1ea9b2e6b734b9780f36e2933dfad21e.svg",
     "static/media/trash.svg": "/ppiapp/static/media/trash.22f0aff9f8485a1e7d3a7c4d5c5f2e03.svg",
     "index.html": "/ppiapp/index.html",
     "static/media/upload.svg": "/ppiapp/static/media/upload.1f297d8737295edd0c698643dd52e43c.svg",
     "main.edfe4944.css.map": "/ppiapp/static/css/main.edfe4944.css.map",
-    "main.4764aa52.js.map": "/ppiapp/static/js/main.4764aa52.js.map",
-    "820.24fc4af7.chunk.js.map": "/ppiapp/static/js/820.24fc4af7.chunk.js.map",
-    "502.6c105129.chunk.js.map": "/ppiapp/static/js/502.6c105129.chunk.js.map",
-    "1.ae798382.chunk.js.map": "/ppiapp/static/js/1.ae798382.chunk.js.map",
+    "main.cc71ad86.js.map": "/ppiapp/static/js/main.cc71ad86.js.map",
+    "820.5ad22472.chunk.js.map": "/ppiapp/static/js/820.5ad22472.chunk.js.map",
+    "502.aab22b8c.chunk.js.map": "/ppiapp/static/js/502.aab22b8c.chunk.js.map",
+    "1.50ec1632.chunk.js.map": "/ppiapp/static/js/1.50ec1632.chunk.js.map",
     "833.addf8fa9.chunk.js.map": "/ppiapp/static/js/833.addf8fa9.chunk.js.map",
-    "636.a5865aa3.chunk.js.map": "/ppiapp/static/js/636.a5865aa3.chunk.js.map",
+    "636.16652abe.chunk.js.map": "/ppiapp/static/js/636.16652abe.chunk.js.map",
     "673.bdb6eedb.chunk.css.map": "/ppiapp/static/css/673.bdb6eedb.chunk.css.map",
     "673.33088659.chunk.js.map": "/ppiapp/static/js/673.33088659.chunk.js.map",
     "84.878bb820.chunk.css.map": "/ppiapp/static/css/84.878bb820.chunk.css.map",
@@ -68,6 +68,6 @@
   },
   "entrypoints": [
     "static/css/main.edfe4944.css",
-    "static/js/main.4764aa52.js"
+    "static/js/main.cc71ad86.js"
   ]
 }
