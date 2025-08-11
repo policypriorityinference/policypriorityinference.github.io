@@ -96,7 +96,7 @@ Tutorials
 ## Policy Priorities & AI for SDGs Data Challenge 
 
  
-In January 2024 The Alan Turing Institute hosted an event gathering 30 teams from around the world to engage in a challenge using open spending data, development indicators, and the PPI app. The teams developed different policy-prioritisation strategies towards the UN’s Sustainable Development Goals. 
+In January 2024 the creators of PPI launched an event gathering 30 teams from around the world to engage in a challenge using open spending data, development indicators, and the PPI app. The teams developed different policy-prioritisation strategies towards the UN’s Sustainable Development Goals. 
  
 
 {{% button url="https://www.turing.ac.uk/events/policy-priorities-ai-sdgs" %}}
