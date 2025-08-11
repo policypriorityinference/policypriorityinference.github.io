@@ -33,8 +33,6 @@ The PPI toolkit has been deployed in various countries through collaborations wi
 
 {{% youtube id="V4dUUt2KmJI" margins="mb-5 mt-5" %}}
 
-The PPI research programme emerged in 2018 from a collaboration between <a href="http://turing.ac.uk/">The Alan Turing Institute</a>, the <a href="https://www.cide.edu/">Centro de Investigación y Docencia Económica</a>, and the <a href="https://www.undp.org/">United Nations Development Programme</a>.
-
 {{% /backgrounded-section %}}
 
 
